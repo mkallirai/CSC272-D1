@@ -1,0 +1,42 @@
+public class DifferncesObjectsClasses {
+    public static void main(String[] args) {
+        // Creating two people from a class known as person.
+        Person Mahavir = new Person("Mahavir", 30);
+
+        // Using a method we can update information such as the Age of a person
+        System.out.println("Person 1: " + person1.getName() + ", Age: " + person1.getAge());
+
+        // Here we will only modify the age of Kyle
+        Mahavir.setAge(26);
+        System.out.println("Updated Person 2: " + Mahavir.getName() + ", Age: " + Mahavir.getAge());
+
+    }
+}
+
+// Definition of the Person class
+class Person {
+    // Private fields to hold the state of the Person objects
+    private String name;
+    private int age;
+
+    // Constructor for initializing new objects of Person class
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    // Method to retrieve the name of a person
+    public String getName() {
+        return name;
+    }
+
+    // Method to retrieve the age of a person
+    public int getAge() {
+        return age;
+    }
+
+    // Method to set the age of a person
+    public void setAge(int age) {
+        this.age = age;
+    }
+}
